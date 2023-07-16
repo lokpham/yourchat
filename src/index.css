@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  .sidebarunder {
+    height: calc(100% - 67px);
+  }
+  .chatitems::-webkit-scrollbar {
+    width: 5px;
+  }
+  .chatitems::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .chatitems::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 10px;
+  }
+  .messagesBox {
+    height: calc(100% - 134px);
+  }
+  .messagesBox::-webkit-scrollbar {
+    width: 5px;
+  }
+  .chat_input::-webkit-scrollbar {
+    width: 5px;
+  }
+  .chat_input::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .chat_input::-webkit-scrollbar-thumb {
+    background-color: gray;
+    border-radius: 10px;
+  }
+  .images_chat_upload::-webkit-scrollbar {
+    width: 5px;
+  }
+  .images_chat_upload::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .images_chat_upload::-webkit-scrollbar-thumb {
+    background-color: gray;
+    border-radius: 10px;
+  }
+  .listuser-search::-webkit-scrollbar {
+    width: 5px;
+  }
+  .listuser-search::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .listuser-search::-webkit-scrollbar-thumb {
+    background-color: white;
+
+    border-radius: 10px;
+  }
+}
