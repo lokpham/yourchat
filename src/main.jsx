@@ -5,10 +5,9 @@ import "./index.css";
 import { AuthContextProvider } from "./context/AuthContext.jsx";
 import { ChatContextProvider } from "./context/ChatContext.jsx";
 ReactDOM.createRoot(document.getElementById("root")).render(
-  // <AuthContextProvider>
-  //   <ChatContextProvider>
-  //     <App />
-  //   </ChatContextProvider>
-  // </AuthContextProvider>
-  <h1>HELLO WORLD</h1>
+  <AuthContextProvider>
+    <ChatContextProvider>
+      <App />
+    </ChatContextProvider>
+  </AuthContextProvider>
 );
