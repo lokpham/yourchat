@@ -1,4 +1,4 @@
-import { Routes, Route, BrowserRouter, Link, Navigate } from "react-router-dom";
+import { Routes, Route, BrowserRouter, Link, Navigate,HashRouter } from "react-router-dom";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
@@ -17,14 +17,14 @@ function App() {
     return children;
   }
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<ProtectedRoute><Home /></ProtectedRoute>}></Route>
         <Route path="/login" element={<Login />}></Route>
         <Route path="/register" element={<Register />}></Route>
         <Route path="/chat/:displayName/:idchat" element={<Chat />}></Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
